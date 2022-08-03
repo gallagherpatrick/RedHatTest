@@ -1,0 +1,23 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #00953a;
+}
+
+a .nav-brand {
+    color: #ffffff;
+}
+
+.fa-solid {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+div .card-header {
+    color: #ffffff;
+    background-color: #00953a;
+}

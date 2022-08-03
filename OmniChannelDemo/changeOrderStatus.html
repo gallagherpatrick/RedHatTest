@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- CSS only -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans:wght@300;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
+    integrity="sha384-fZCoUih8XsaUZnNDOiLqnby1tMJ0sE7oBbNk2Xxf5x8Z4SvNQ9j83vFMa/erbVrV" crossorigin="anonymous" />
+
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script src="getNewOrder.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body onload="getAllOrders()">
+  <!-- NAV -->
+  <nav class="navbar sticky-top mb-3">
+    <div class="container-fluid d-flex">
+      <a class="fa-solid fa-arrow-left" href="index.html"></a>
+      <a class="navbar-brand text-white" href="#">Pick Order</a>
+      <i class="fa-solid fa-cart-plus"></i>
+    </div>
+  </nav>
+
+  <div aria-live="assertive" aria-atomic="true" class="d-flex justify-content-center">
+    <div class="toast position-absolute mt-5" role="alert" aria-live="assertive" aria-atomic="true" id="myToast">
+      <div class="toast-header fs-5">
+        Thank you for the updating the order!
+      </div>
+      <button type="button" class="btn btn-primary m-3" onclick="closeToast()">Close</button>
+    </div>
+  </div>
+
+
+  <!-- <div class="col-4 ms-3">
+    <label for="orderID">Order ID Number</label>
+    <input class="form-control mt-2" id="orderID" placeholder="Order ID#">
+  </div>
+
+  <div class="btn-group ms-4 mt-3">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Choose
+      Status</button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" onclick="getCurrentOrderState(5)">Picking Order</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" onclick="getCurrentOrderState(10)">Order picked up - Paid at POS</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" onclick="getCurrentOrderState(12)">Order picked up - Handover</a></li>
+      <li>
+        <hr class="dropdown-divider">
+      </li>
+      <li><a class="dropdown-item" onclick="getCurrentOrderState(6)">Canceled</a></li>
+    </ul>
+  </div>
+  <button id="mybutton" type="button" class="btn btn-primary ms-3 mt-3" onclick="openToast(), timeFunction()">Change
+    Status</button> -->
+
+</body>
+
+</html>
